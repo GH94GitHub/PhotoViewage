@@ -1,0 +1,12 @@
+<form [formGroup]="signupForm" class="center-width column" (ngSubmit)="signup($event)">
+  <input type="text" formControlName="email" placeholder="Email">
+  <input type="password" formControlName="password" placeholder="Password">
+  <input type="password" formControlName="repeatPassword" placeholder="Repeat Password">
+
+  <div class="button-group space-around">
+  <button type="button" (click)="back()">Back</button>
+  <button type="submit" [disabled]="!signupForm.valid">Sign up</button>
+</div>
+</form>
+
+

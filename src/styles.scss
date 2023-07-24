@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+.page-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Container Flex */
+.column, .row,.center-width, .center-height, .center-all, .offset-20h {
+  display: flex;
+
+}
+.column { flex-direction: column; }
+.row { flex-direction: row; }
+.center-width, .center-all { justify-content: center; }
+.center-height, .center-all { align-items: center; }
+.center-all { text-align: center; }
+
+/* Controls Flex */
+
+/* Button Group */
+.button-group {
+  display: flex;
+  align-items: center;
+
+  &.space-between { justify-content: space-between; }
+  &.space-around { justify-content: space-around; }
+  &.space-evenly { justify-content: space-evenly; }
+}
+
+/* Form Spacing*/
+form {
+  input {
+      margin: auto;
+  }
+
+  input+input {
+    margin-top: 10px;
+  }
+
+  input:last-of-type {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,9 @@
+<form [formGroup]="loginForm" class="center-width column" (ngSubmit)="login($event)">
+  <input type="text" formControlName="username" placeholder="Email">
+  <input type="password" formControlName="password" placeholder="Password">
+
+  <div class="button-group space-around">
+    <button type="button" (click)="back()">Back</button>
+    <button type="submit" [disabled]="!loginForm.valid" (click)="login($event)">Log in</button>
+  </div>
+</form>
