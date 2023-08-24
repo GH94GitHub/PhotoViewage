@@ -38,9 +38,12 @@ $photoviewage-theme: mat.define-light-theme((
 :root {
   --navbar-desktop-height: 64px;
   --navbar-mobile-height: 55px;
+  --main-background-color: rgb(192, 192, 192);
+  --secondary-color: rgb(135, 135, 135);
 }
 body {
   margin: 0;
+  background-color: var(--main-background-color);
 }
 .page-container {
   width: 100vw;

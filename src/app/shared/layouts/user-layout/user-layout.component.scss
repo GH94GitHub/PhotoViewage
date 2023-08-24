@@ -6,20 +6,11 @@
 
 #photo-sidenav {
   flex: 0 20%;
-  background-color: rgb(135, 135, 135);
+  background-color: var(--secondary-color);
   min-width: 265px;
-
-  & { // ?Test (Remove)
-    border: 1px solid red;
-  }
 }
 #main-view {
   flex: 1 80%;
-  background-color: rgb(192, 192, 192);
-
-  & { // ?Test Border
-    border: 1px solid red;
-  }
 }
 
 // Mobile Devices
