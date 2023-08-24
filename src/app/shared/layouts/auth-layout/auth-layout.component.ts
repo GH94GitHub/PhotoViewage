@@ -1,3 +1,8 @@
+/*
+  Description:
+    This layout positions components in the center and styles the page around the component
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

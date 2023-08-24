@@ -1,0 +1,28 @@
+#nav {
+  background-color: rgb(83, 83, 83);
+  color: white;
+  height: 64px;
+}
+
+#brand {
+  cursor: default;
+}
+
+.nav-icon-size {
+  height: 100%;
+  width: auto;
+  font-size: 48px;
+}
+
+
+
+// Mobile Devices
+@media (max-width: 768px) {
+  #nav {
+    height: 55px; // Nav shrinks a little bit on mobile devices
+  }
+
+    .nav-icon-size {
+      font-size: 40px;
+    }
+}
