@@ -1,7 +1,7 @@
 #nav {
   background-color: rgb(83, 83, 83);
   color: white;
-  height: 64px;
+  height: var(--navbar-desktop-height);
 }
 
 #brand {
@@ -19,7 +19,7 @@
 // Mobile Devices
 @media (max-width: 768px) {
   #nav {
-    height: 55px; // Nav shrinks a little bit on mobile devices
+    height: var(--navbar-mobile-height); // Nav shrinks a little bit on mobile devices
   }
 
     .nav-icon-size {

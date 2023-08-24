@@ -19,6 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
 import { MatIconModule } from '@angular/material/icon';
+import { ImageSidenavComponent } from './shared/image-sidenav/image-sidenav.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MatIconModule } from '@angular/material/icon';
      UserLayoutComponent,
      NavComponent,
      BaseLayoutComponent,
-     HomeComponent
+     HomeComponent,
+     ImageSidenavComponent
   ],
   imports: [
     BrowserModule,

@@ -1,2 +1,11 @@
 <!-- todo: Will be inside 'BaseLayout' and contain an additional sidebar for navigating pictures-->
-<router-outlet>
+<div class="bounds row">
+  <!-- Image Navigation -->
+  <section id="photo-sidenav" class="default-padding">
+    <app-image-sidenav></app-image-sidenav>
+  </section>
+  <!-- Individual Component -->
+  <section id="main-view" class="default-padding">
+    <router-outlet></router-outlet>
+  </section>
+</div>
