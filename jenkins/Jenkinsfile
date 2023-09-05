@@ -1,7 +1,6 @@
 pipeline {
   agent any
   stages {
-
     stage("Clean Up") {
       steps {
         deleteDir()
@@ -10,6 +9,13 @@ pipeline {
     stage("Clone Repo") {
       steps {
         bat "git clone https://github.com/GH94GitHub/PhotoViewage.git"
+      }
+    }
+    stage("Install NPM Packages") {
+      steps {
+        dir("PhotoViewage") {
+          bat "npm i"
+        }
       }
     }
     stage("Build") {
@@ -21,14 +27,15 @@ pipeline {
     }
     stage("Deploy") {
       steps {
-        dir("PhotoViewage") {
-          bat "ng serve -o"
+        dir("PhotoViewage/dist/photoviewage") {
+          bat "aws s3 rm s3://photoviewage --recursive"
+          bat "aws s3 sync . s3://photoviewage"
         }
       }
     }
-    stage("Done") {
+    stage("End Clean Up") {
       steps {
-        echo "Done"
+        deleteDir()
       }
     }
   }
