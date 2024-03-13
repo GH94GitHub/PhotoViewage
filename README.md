@@ -1,5 +1,7 @@
 # Photoviewage
 
+Client application providing users with the ability to backup photos to AWS Cloud and use this portal to manage/view them.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
 ## Development server
